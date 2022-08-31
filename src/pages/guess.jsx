@@ -38,7 +38,7 @@ function Guess() {
       setAnswer(e.target.value);
     },
     submit: () => {
-      if (question.word === answer) {
+      if (question.word === answer.toLowerCase().trim()) {
         setNewQuestion();
       }
       setAnswer('');
@@ -52,7 +52,6 @@ function Guess() {
       .filter((index) => !reveal.includes(index));
     if (remaining.length <= 0) return;
     const index = Math.round(Math.random() * (remaining.length - 1));
-    console.log('remaining', remaining, 'index', index);
     setReveal((r) => [...r, remaining[index]]);
   };
 
