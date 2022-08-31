@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 1.875rem;
+  aspect-ratio: 1;
+  background-color: $color-light;
+  border-radius: 0.5rem;
+  font-family: tahoma;
+  box-shadow: 2px 2px 3px $color-shadow;
+  user-select: none;
+}
