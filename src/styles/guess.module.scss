@@ -29,3 +29,13 @@
   margin-top: 2rem;
   margin-bottom: 0.5rem;
 }
+
+@media (max-width: 600px) {
+  .main {
+    justify-content: flex-start;
+    margin-top: 2rem;
+  }
+  .wordSection {
+    justify-content: center;
+  }
+}
