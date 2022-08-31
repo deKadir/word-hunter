@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 1.875rem;
+  width: calc(1.875rem + 1vw);
   aspect-ratio: 1;
   background-color: $color-light;
   border-radius: 0.5rem;
