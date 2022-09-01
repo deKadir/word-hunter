@@ -7,11 +7,13 @@
   max-width: 100%;
 }
 .input {
+  display: block;
   font-size: 1.5rem;
   padding: 0.25rem 1rem;
   outline: none;
   border: none;
   font-family: tahoma;
+  width: 100%;
 }
 .submit {
   height: auto;
