@@ -12,15 +12,7 @@ function Guess() {
   React.useEffect(() => setNewQuestion(), []);
 
   const setNewQuestion = () => {
-    const data = getRandomWord();
-    const q = {
-      word: data.word,
-      caption: {
-        en: data.meanings?.[0]?.definitions[0]?.definition,
-        tr: '',
-      },
-    };
-
+    const q = getRandomWord();
     setLang('en');
     setQuestion({ ...q });
     setReveal([]);
